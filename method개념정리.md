@@ -2,6 +2,7 @@
 
 ---
 <br>
+
 ### String.prototype.split()
 
 ***String*** 객체를 여러 개의 문자열로 나누고 array로 반환된다
