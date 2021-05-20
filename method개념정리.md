@@ -49,3 +49,19 @@ console.log(months);
 // expected output: Array ["Jan", "Feb", "May", "June"]
 
 ```
+
+### Array.prototype.indexOf()
+
+*배열* 에서 지정된 요소를 찾을 수 있는 첫 번째 인덱스를 반환하고 존재하지 않는다면 -1을 반환한다. 
+
+```jsx
+var array = [2, 9, 9];
+array.indexOf(2);     // 0
+array.indexOf(7);     // -1
+array.indexOf(9, 2);  // index 2
+array.indexOf(2, -3); // index 0
+array.indexOf(2, -2); // -1 
+```
+
+
+
