@@ -34,3 +34,18 @@ console.log(pets.includes('cat')); //ture
 ### Array.prototype.splice()
 
 기존 배열을 *삭제 또는 교체* 하거나 새 요소를 *추가* 하여 배열의 내용을 변경한다.
+
+```jsx
+const months = ['Jan', 'March', 'April', 'June'];
+
+months.splice(1, 0, 'Feb');
+// index 1에서 0만큼 삭제, index 1 자리에 feb를 추가
+console.log(months);
+// expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+months.splice(2, 2, 'May');
+// index 2에서 2만큼 삭제 -> "March", "Aprill" , index2에 May를 추가
+console.log(months);
+// expected output: Array ["Jan", "Feb", "May", "June"]
+
+```
