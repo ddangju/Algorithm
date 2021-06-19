@@ -63,5 +63,19 @@ array.indexOf(2, -3); // index 0
 array.indexOf(2, -2); // -1 
 ```
 
+### Array.prototype.push()
+
+**배열**의 끝에 하나 이상의 요소를 추가하고, 배열의 새로운 길이를 반환한다.
+
+```jsx
+
+const a = ['1','2','3'];
+
+const b = a.push('4');
+
+console.log(b); // push된 배열의 길이(length)가 나온다.
+console.log(a); //배열에 담긴 객체가 나온다.
+
+```
 
 
