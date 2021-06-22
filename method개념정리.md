@@ -70,6 +70,8 @@ array.indexOf(2, -3); // index 0
 array.indexOf(2, -2); // -1 
 ```
 
+<br>
+
 ### Array.prototype.push()
 
 **배열**의 끝에 하나 이상의 요소를 추가하고, 배열의 새로운 길이를 반환한다.
@@ -86,6 +88,7 @@ console.log(a); //배열에 담긴 객체가 나온다.
 ```
 
 <br>
+
 
 ### Array.prototype.slice()
 
