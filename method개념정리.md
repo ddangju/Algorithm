@@ -20,21 +20,6 @@ console.log(split); /// [" "]
 
 <br>
 
-### Array.prototype.includes()
-
-배열이 특정 요소를 포함하고 있는지 판별한다.
-문자나 문자열을 비교할 때 *대소문자* 를 구분한다!
-반환값은 boolean 값.
-
-```jsx
-
-const pets = ['cat', 'dog', 'bat'];
-
-console.log(pets.includes('cat')); //ture
-```
-
-<br>
-
 ### Array.prototype.splice()
 
 기존 배열을 *삭제 또는 교체* 하거나 새 요소를 *추가* 하여 배열의 내용을 변경한다.
@@ -52,6 +37,43 @@ months.splice(2, 2, 'May');
 console.log(months);
 // expected output: Array ["Jan", "Feb", "May", "June"]
 
+```
+
+<br>
+
+
+
+### Array.prototype.slice()
+
+어떤 배열의 시작부터 끝까지(끝은 포함x)에 대해 새로운 배열 객체로 반환한다. 원본 배열은 바뀌지 않는다.
+
+```jsx
+const animals = ['사자', '호랑이', '쥐', '여우', '코끼리'];
+
+console.log(animals.slice(2)); // 쥐, 여우, 코끼리
+
+console.log(animals.slice(2, 4)); // 쥐, 여우
+
+console.log(animals.slice(-2)); // 여우, 코끼리
+
+console.log(animals.slice(2, -1));// 쥐, 여우 
+
+```
+
+<br>
+
+
+### Array.prototype.includes()
+
+배열이 특정 요소를 포함하고 있는지 판별한다.
+문자나 문자열을 비교할 때 *대소문자* 를 구분한다!
+반환값은 boolean 값.
+
+```jsx
+
+const pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat')); //ture
 ```
 
 <br>
@@ -90,23 +112,5 @@ console.log(a); //배열에 담긴 객체가 나온다.
 <br>
 
 
-### Array.prototype.slice()
-
-어떤 배열의 시작부터 끝까지(끝은 포함x)에 대해 새로운 배열 객체로 반환한다. 원본 배열은 바뀌지 않는다.
-
-```jsx
-const animals = ['사자', '호랑이', '쥐', '여우', '코끼리'];
-
-console.log(animals.slice(2)); // 쥐, 여우, 코끼리
-
-console.log(animals.slice(2, 4)); // 쥐, 여우
-
-console.log(animals.slice(-2)); // 여우, 코끼리
-
-console.log(animals.slice(2, -1));// 쥐, 여우 
-
-```
-
-<br>
 
 
