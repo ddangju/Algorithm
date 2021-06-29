@@ -3,7 +3,7 @@
 ---
 <br>
 
-### String.prototype.split()
+## String.prototype.split()
 
 ***String*** 객체를 여러 개의 문자열로 나누고 array로 반환된다
 
@@ -20,7 +20,7 @@ console.log(split); /// [" "]
 
 <br>
 
-### Array.prototype.splice()
+## Array.prototype.splice()
 
 기존 배열을 *삭제 또는 교체* 하거나 새 요소를 *추가* 하여 배열의 내용을 변경한다.
 
@@ -43,7 +43,7 @@ console.log(months);
 
 
 
-### Array.prototype.slice()
+## Array.prototype.slice()
 
 어떤 배열의 시작부터 끝까지(끝은 포함x)에 대해 새로운 배열 객체로 반환한다. 원본 배열은 바뀌지 않는다.
 
@@ -63,7 +63,7 @@ console.log(animals.slice(2, -1));// 쥐, 여우
 <br>
 
 
-### Array.prototype.includes()
+## Array.prototype.includes()
 
 배열이 특정 요소를 포함하고 있는지 판별한다.
 문자나 문자열을 비교할 때 *대소문자* 를 구분한다!
@@ -79,7 +79,7 @@ console.log(pets.includes('cat')); //ture
 <br>
 
 
-### Array.prototype.indexOf()
+## Array.prototype.indexOf()
 
 *배열* 에서 지정된 요소를 찾을 수 있는 첫 번째 인덱스를 반환하고 존재하지 않는다면 -1을 반환한다. 
 
@@ -94,7 +94,7 @@ array.indexOf(2, -2); // -1
 
 <br>
 
-### Array.prototype.push()
+## Array.prototype.push()
 
 **배열**의 끝에 하나 이상의 요소를 추가하고, 배열의 새로운 길이를 반환한다.
 
@@ -112,5 +112,17 @@ console.log(a); //배열에 담긴 객체가 나온다.
 <br>
 
 
+## Array.prototype.filter()
+
+filter()메서드는 주어진 함수의 테스트를 통과하는 모든 요소를 모아 `새로운배열`로 반환한다.
+
+```jsx
+const words = ['a', 'ab', 'abc', 'abcd', 'abcde', 'abcdef'];
+
+const result = words.filter(word => word.length > 5);
+
+console.log(result); /// Array[abcde]
+
+```
 
 
