@@ -161,5 +161,21 @@ console.log(firstElement);
 // expected output: 1
 ```
 
+<br>
+
+## Array.prototype.forEach()
+
+`forEach()`는 주어진 함수를 배열 요소 각각에 대해 실행한다.
+
+```jsx
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => console.log(element));
+//"a"
+//"b"
+//"c"
+```
+
+
 
 
